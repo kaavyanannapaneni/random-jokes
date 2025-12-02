@@ -44,14 +44,10 @@ const Jokes = () => {
 
 const getJokes = async () => {
   await new Promise((resolve) => setTimeout(resolve, 1000))
-  try {
-    const response = await fetch(
-      `https://official-joke-api.appspot.com/jokes/random/`
-    )
-    return await response.json()
-  } catch (error) {
-    console.log('Error', error)
-  }
+  const response = await fetch(
+    `https://official-joke-api.appspot.com/jokes/random/`
+  )
+  return await response.json()
 }
 
 export default Jokes
