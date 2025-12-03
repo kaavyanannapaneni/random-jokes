@@ -23,13 +23,52 @@ body {
   border: 5px solid black;
 }
 
+h2,
 h1 {
   text-align: center;
   margin: 0 0 16px 0;
 }
 
-h1:nth-child(2) {
+h2:nth-child(2) {
   color: white;
+}
+
+span {
+  padding: 0 12px;
+  margin: 0 6px;
+  border: 2px solid black;
+  box-shadow: 3px 3px 0 black;
+}
+
+h1 span:nth-child(1) {
+  background-color: #fb5655;
+  display: inline-block;
+  transform: translateY(4px);
+}
+
+h1 span:nth-child(2) {
+  background-color: #f8a136;
+  padding: 0 6px;
+}
+
+h1 span:nth-child(3) {
+  background-color: #d362f5;
+  display: inline-block;
+  transform: rotate(-15deg) translateY(-4px);
+}
+
+h1 span:nth-child(4) {
+  background-color: #34b2c9;
+  padding: 0 6px;
+  display: inline-block;
+  transform: translateY(-4px);
+}
+
+h1 span:nth-child(5) {
+  background-color: #fc4949;
+  display: inline-block;
+  margin: 0 12px;
+  transform: rotate(10deg) translateY(2px);
 }
 
 button {
@@ -89,6 +128,7 @@ button:hover {
     box-shadow: 4px 4px 0 black;
     border: 2px solid black;
     margin-top: 1.5em;
+    padding: .75em 1.5em;
     font-size: 12px;
   }
 }
