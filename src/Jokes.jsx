@@ -14,6 +14,12 @@ const Jokes = () => {
     console.log(data)
   }
 
+  const handleJokeType = (type) => {
+    setType(type)
+    refetch()
+    setShow(false)
+  }
+  
   return (
     <>
       <div className='container'>
@@ -47,28 +53,25 @@ const Jokes = () => {
       <div className='joke-options'>
         <button
           onClick={() => {
-            setType('programming')
-            refetch()
-            setShow(false)
+            handleJokeType('programming')
           }}
+          disabled={!show}
         >
           Programming
         </button>
         <button
           onClick={() => {
-            setType('general')
-            refetch()
-            setShow(false)
+            handleJokeType('general')
           }}
+          disabled={!show}
         >
           General
         </button>
         <button
           onClick={() => {
-            setType('knock-knock')
-            refetch()
-            setShow(false)
+            handleJokeType('knock-knock')
           }}
+          disabled={!show}
         >
           Knock-Knock
         </button>

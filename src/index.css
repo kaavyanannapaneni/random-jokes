@@ -80,3 +80,15 @@ button:hover {
     background-size: 100%;
   }
 }
+
+@media screen and (max-width: 420px) {
+  .container {
+    border: 3px solid black;
+  }
+  button {
+    box-shadow: 4px 4px 0 black;
+    border: 2px solid black;
+    margin-top: 1.5em;
+    font-size: 12px;
+  }
+}
