@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +33,7 @@ h1:nth-child(2) {
 }
 
 button {
-  background-color: #e6c667;
+  background-color: #fda538;
   font-size: medium;
   padding: 0.5em 1.5em;
   margin-top: 2em;
@@ -39,12 +41,31 @@ button {
   box-shadow: 4px 4px 0 black;
   cursor: pointer;
   transition: all 0.1s ease;
+  font-weight: 500;
 }
 
 button:hover {
   transform: translate(0, -2px);
 }
 
+.joke-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.joke-options button:nth-child(1) {
+  background-color: #fe4e4f;
+}
+
+.joke-options button:nth-child(2) {
+  background-color: #fff500;
+}
+
+.joke-options button:nth-child(3) {
+  background-color: #e46bff;
+}
 .loader {
   width: 120px;
   height: 20px;
