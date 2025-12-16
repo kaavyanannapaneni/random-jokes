@@ -1,5 +1,6 @@
 ## Tech
 
+- Prerequisite [Node JS](https://nodejs.org/en)
 - [React-19.2.3](https://react.dev/)
 - [Tanstack / React Query](https://tanstack.com/)
 - API   
@@ -37,6 +38,27 @@ npm start
 
 ```
 http://localhost:3000/
+```
+
+## Deploying using github pages 
+
+1. Install gh-pages to create & publish to gh-pages branch
+```
+npm i gh-pages
+```
+
+2. In `package.json` add
+```json
+ "homepage": "https://<username>.github.io/<repo-name>/",
+
+  "scripts": {
+     "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+  },
+```
+3. To deploy
+```bash
+npm run build 
 ```
 
 [Link](https://kaavyanannapaneni.github.io/random-jokes/)
